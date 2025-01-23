@@ -53,13 +53,13 @@ nav .lgo{
     line-height: 56px;
 }
 
-nav ul {
+ul {
     list-style: none;
     gap: 64px;
 }
 
 
-nav ul li a {
+ul li a {
     color: #fff;    
     text-decoration: none;
     font-size: 16px;
@@ -365,5 +365,31 @@ button {
 
 /* Footer */
 footer {
-   
+    background-color: #23262F;
+    color: #fff;
 }
+footer ul{
+    display: flex;
+    gap: 20px;
+}
+
+footer hr{
+    width: 100%;
+    border: 1px solid #fff;
+
+}
+.footz{
+    justify-content: space-between;
+
+}
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.footer-links ul{
+    display: flex;
+    flex-direction: column;
+}
+
