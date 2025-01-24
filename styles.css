@@ -28,6 +28,7 @@ p {
 
 /* Header */
 header {
+    padding: 30px 0;
     background-image: url('./images/living-room.png');
     background-size: cover;
     background-position: center;
@@ -45,6 +46,7 @@ header h1 {
 nav {
     color: #fff;
     justify-content: space-between;
+    align-items: center;
     
 }
 nav .lgo{
@@ -319,6 +321,14 @@ button {
     color: #fff;  
 }
 
+.hide{
+    display: none;
+}
+
+.p-100{
+    padding: 80px 0 100px 0;
+}
+
 
 .contact-section{
     color: #fff;
@@ -362,6 +372,10 @@ button {
     cursor: pointer;
 }
 
+.navigation{
+    display: flex;
+}
+
 
 /* Footer */
 footer {
@@ -393,3 +407,133 @@ footer hr{
     flex-direction: column;
 }
 
+.footer-links ul li{
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 13px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .p-80{
+        padding: 40px 0;
+    }
+    .container {
+        width: 90%;
+    }
+    .navigation {
+        display: none;
+    }
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .products {
+        flex-direction: column;
+        margin-left: 20px;
+        
+    }
+    .product{
+        
+    }
+    .products-info {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .products-info h4 {
+        margin: 0;
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .products-info p {
+        margin: 10px 0;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .products-info a {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: left;
+        
+    }
+    .hide{
+        display: block;
+        font-size: 30px;
+
+    }
+    
+    
+    
+    .grid-container {
+        margin-top: -150px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+    .grid-item span.mHidden{
+        display: none;
+    }
+    
+    
+    .grid-item h3 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .grid-item p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .hero h1 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .hero p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .hero button {
+        font-size: 16px;
+        line-height: 26px;
+        padding: 12px 60px;
+    }
+    .peoples {
+        flex-direction: column-reverse;
+    }
+    .peoples-info h6 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .peoples-info p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .contact h2 {
+        text-align: center;
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .contact p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .contact-info input {
+        padding: 12px;
+        width: 40%;
+    }
+    .contact-info button {
+        padding: 12px;
+    }
+    .contact-info {
+        max-width: 100%;
+    }
+    
+    //nav 
+    
+    
+
+}
+    
